@@ -17,7 +17,7 @@ You can view the live version of this portfolio here:
 - **Animated Timeline:** A sleek visual representation of professional experience.
 - **SEO Optimized:** Structured HTML5 for better search engine visibility.
 
-## 🛠️ Built With
+## Built With
 - **HTML5:** Semantic structure.
 - **CSS3:** Custom styling with Flexbox, Grid, and Media Queries.
 - **JavaScript (ES6):** Interactive mobile menu logic.
