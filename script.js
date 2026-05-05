@@ -8,7 +8,7 @@ hamburger.addEventListener('click', () => {
     hamburger.querySelector('i').classList.toggle('fa-times');
 });
 
-// Smooth Scroll
+// Smooth Scroll for Navigation & Footer Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -18,7 +18,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: target.offsetTop - 80,
                 behavior: 'smooth'
             });
-            navMenu.classList.remove('active');
+            // Close mobile menu if open
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                hamburger.querySelector('i').classList.replace('fa-times', 'fa-bars');
+            }
         }
     });
 });
