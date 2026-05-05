@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- CRITICAL FOR RESPONSIVENESS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Aloyo Mirriam | Educator & Data Specialist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloyo Mirriam Adongping | Educator & Data Specialist</title>
+    <!-- Fonts: Inter for UI and Fraunces for Elegance -->
     <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="style.css">
@@ -12,84 +12,113 @@
 <body>
 
     <nav class="navbar">
-        <div class="container nav-flex">
-            <a href="#" class="logo">Mirriam.A</a>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">ALOYO<span>.</span></a>
             <ul class="nav-links" id="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
     <header class="hero" id="about">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <span class="badge">Educator & Data Specialist</span>
-                <h1>Aloyo Mirriam <br><span class="accent">Adongping</span></h1>
-                <p>Bridging the gap between academic excellence and data integrity. With a background in Education and ICT, I help organizations grow through teaching and precision management.</p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn">Get In Touch</a>
-                    <a href="mailto:aloyomirriam2020@gmail.com" class="btn btn-outline">Email Me</a>
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <p class="pre-title">Education & Data Management</p>
+                <h1>Empowering Minds Through <span class="accent-text">Precision.</span></h1>
+                <p class="hero-desc">I am a Bachelor of Education graduate and Data Entry Specialist. I combine pedagogical expertise with technical data management to deliver organizational excellence.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">Start a Conversation</a>
+                    <a href="#experience" class="btn-secondary">View Work</a>
                 </div>
             </div>
-            <div class="hero-img-box">
-                <div class="img-placeholder"><i class="fas fa-user"></i></div>
+            <div class="hero-visual">
+                <div class="image-frame">
+                    <img src="profile.jpg" alt="Aloyo Mirriam Adongping">
+                </div>
             </div>
         </div>
     </header>
 
     <section class="section" id="experience">
         <div class="container">
-            <h2 class="title">Professional Journey</h2>
-            <div class="timeline">
-                <div class="item">
-                    <div class="dot"></div>
-                    <h3>Secondary School Teacher</h3>
-                    <span class="meta">2022 - 2023 | Education Sector</span>
-                    <p>Planned engaging curriculum-aligned lessons and mentored students toward academic success.</p>
+            <h2 class="section-title">Professional Path</h2>
+            <div class="experience-grid">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="year">2022 — 2023</span>
+                        <h3>Secondary School Teacher</h3>
+                    </div>
+                    <p>Planned and delivered engaging curriculum-aligned lessons while providing mentorship and academic advisors to students.</p>
                 </div>
-                <div class="item">
-                    <div class="dot"></div>
-                    <h3>Data Entry Specialist</h3>
-                    <span class="meta">2021 - 2021 | Data Management</span>
-                    <p>Ensured 99% accuracy in database management and prepared analytical reports for decision-making.</p>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="year">2021 — 2021</span>
+                        <h3>Data Entry Specialist</h3>
+                    </div>
+                    <p>Maintained 99% accuracy in database management, ensuring confidentiality and generating analytical reports for organizational growth.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-soft" id="skills">
-        <div class="container grid-3">
-            <div class="skill-card">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <h3>Teaching</h3>
-                <p>Classroom management and curriculum development.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>Data Entry</h3>
-                <p>Database management, cleaning, and reporting.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-users-cog"></i>
-                <h3>Leadership</h3>
-                <p>Experienced in institutional leadership and mentorship.</p>
+    <section class="section bg-dark" id="education">
+        <div class="container">
+            <h2 class="section-title light">Academic Foundation</h2>
+            <div class="edu-list">
+                <div class="edu-row">
+                    <span class="edu-year">2019-2023</span>
+                    <div class="edu-info">
+                        <h4>Bachelor of Education</h4>
+                        <p>Gulu University</p>
+                    </div>
+                </div>
+                <div class="edu-row">
+                    <span class="edu-year">2017-2018</span>
+                    <div class="edu-info">
+                        <h4>UACE (Advanced Certificate)</h4>
+                        <p>Sacred Heart Secondary School</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <div class="container text-center">
-            <h2>Let's Connect</h2>
-            <p>Based in Gulu, Uganda | +256 780 977 278</p>
-            <div class="socials">
-                <a href="mailto:aloyomirriam2020@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+256780977278"><i class="fas fa-phone"></i></a>
+    <section class="section" id="contact">
+        <div class="container contact-layout">
+            <div class="contact-info">
+                <h2 class="section-title">Get in touch.</h2>
+                <p>Have a project in mind or looking for a dedicated professional? Send a message.</p>
+                <div class="contact-details">
+                    <div class="detail"><i class="fas fa-envelope"></i> aloyomirriam2020@gmail.com</div>
+                    <div class="detail"><i class="fas fa-phone"></i> +256 780 977 278</div>
+                </div>
             </div>
-            <p class="copy">&copy; 2024 Aloyo Mirriam. All Rights Reserved.</p>
+            <!-- NETLIFY FORM LOGIC -->
+            <form name="portfolio-contact" method="POST" data-netlify="true" class="contact-form">
+                <input type="hidden" name="form-name" value="portfolio-contact" />
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Aloyo Mirriam Adongping. Built for excellence.</p>
         </div>
     </footer>
 
