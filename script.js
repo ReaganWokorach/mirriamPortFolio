@@ -1,14 +1,14 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
-// Toggle Mobile Menu
+// Mobile Menu Toggle
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     hamburger.querySelector('i').classList.toggle('fa-bars');
     hamburger.querySelector('i').classList.toggle('fa-times');
 });
 
-// Smooth Scrolling for all links
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -18,11 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: target.offsetTop - 80,
                 behavior: 'smooth'
             });
-            // Auto-close menu on mobile after clicking
             navMenu.classList.remove('active');
-            const icon = hamburger.querySelector('i');
-            icon.classList.add('fa-bars');
-            icon.classList.remove('fa-times');
         }
     });
 });
