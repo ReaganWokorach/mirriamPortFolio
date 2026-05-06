@@ -293,6 +293,22 @@ input, textarea {
   font-family: inherit;
 }
 
+textarea {
+  resize: none; /* prevents user from stretching it outside */
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  background: #334155;
+  border: 1px solid #475569;
+  border-radius: 12px;
+  color: var(--white);
+  font-family: inherit;
+  box-sizing: border-box; /* ensure padding stays inside */
+}
+
 .full-width {
   width: 100%;
 }
