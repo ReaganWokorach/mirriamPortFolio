@@ -1,3 +1,5 @@
+navLinks[0].classList.add('active');
+
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-links a');
@@ -36,6 +38,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 navMenu.classList.remove('active');
                 hamburger.querySelector('i').classList.replace('fa-times', 'fa-bars');
             }
+        }
+    });
+});
+
+const sections = document.querySelectorAll('section, header');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+    let currentSection = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        // Adjust offset for navbar height
+        if (window.scrollY >= (sectionTop - 120)) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+
+        const href = link.getAttribute('href').substring(1);
+        if (href === currentSection) {
+            link.classList.add('active');
         }
     });
 });
