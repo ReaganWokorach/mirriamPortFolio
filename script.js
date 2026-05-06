@@ -1,5 +1,3 @@
-navLinks[0].classList.add('active');
-
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-links a');
