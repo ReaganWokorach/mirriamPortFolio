@@ -80,6 +80,22 @@ body {
   color: var(--blue);
 }
 
+.nav-links a.active {
+  color: var(--blue);
+  position: relative;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--blue);
+  border-radius: 2px;
+}
+
 .hamburger {
   display: none;
   background: none;

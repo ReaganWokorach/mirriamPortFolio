@@ -1,5 +1,6 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-links a');
 
 // Mobile Menu Toggle
 hamburger.addEventListener('click', () => {
@@ -8,7 +9,18 @@ hamburger.addEventListener('click', () => {
     hamburger.querySelector('i').classList.toggle('fa-times');
 });
 
-// Smooth Scroll for Navigation & Footer Links
+// Handle Active Link Click
+navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        // Remove active from all
+        navLinks.forEach(l => l.classList.remove('active'));
+
+        // Add active to clicked one
+        this.classList.add('active');
+    });
+});
+
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -18,7 +30,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: target.offsetTop - 80,
                 behavior: 'smooth'
             });
-            // Close mobile menu if open
+
+            // Close mobile menu
             if (navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
                 hamburger.querySelector('i').classList.replace('fa-times', 'fa-bars');
