@@ -296,6 +296,7 @@ input, textarea {
 textarea {
   resize: none; /* prevents user from stretching it outside */
   display: block;
+  margin-bottom: 20px;
 }
 
 input, textarea {
